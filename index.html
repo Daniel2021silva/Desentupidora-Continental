@@ -4,574 +4,736 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Desentupidora Continental 24h | Atendimento Rápido em Pelotas e Região</title>
+  <title>Desentupidora Continental | Desentupidora em Pelotas</title>
 
-  <meta 
-    name="description" 
-    content="Desentupidora 24h em Pelotas e região. Atendimento rápido para pia, vaso, ralo, esgoto, caixa de gordura, tubulações, residências, comércios e condomínios." 
-  />
+  <meta name="description" content="Desentupidora Continental em Pelotas. Desentupimento de pia, vaso sanitário, ralo, esgoto, caixa de gordura, caça vazamentos e dedetização. Atendimento rápido pelo WhatsApp.">
 
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="keywords" content="desentupidora em Pelotas, desentupimento em Pelotas, caça vazamentos em Pelotas, dedetização em Pelotas, desentupimento de pia, desentupimento de vaso, limpeza de caixa de gordura">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Desentupidora  Continental 24h",
-    "description": "Desentupidora 24h com atendimento para residências, comércios, condomínios e empresas.",
-    "telephone": "+55 53 98467-0652",
-    "areaServed": "Pelotas e região",
-    "openingHours": "Mo-Su 00:00-23:59",
-    "priceRange": "$$"
-  }
-  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #111;
+    }
+
+    :root {
+      --azul: #063b82;
+      --azul-escuro: #041f45;
+      --vermelho: #d71920;
+      --verde: #25d366;
+      --amarelo: #ffcc00;
+      --branco: #ffffff;
+      --cinza: #555;
+    }
+
+    header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      background: rgba(255,255,255,0.96);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    .navbar {
+      max-width: 1180px;
+      margin: auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      color: var(--azul);
+      font-size: 20px;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--azul), var(--vermelho));
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #222;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .btn-top {
+      background: var(--verde);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      box-shadow: 0 8px 22px rgba(37,211,102,0.35);
+    }
+
+    .menu-btn {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 120px 20px 60px;
+      background:
+        linear-gradient(110deg, rgba(4,31,69,0.96) 0%, rgba(6,59,130,0.92) 55%, rgba(215,25,32,0.78) 100%),
+        url("van-continental.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero-container {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--amarelo);
+      color: #111;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 900;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 72px);
+      line-height: 1;
+      margin-bottom: 18px;
+      font-weight: 900;
+    }
+
+    .hero h2 {
+      font-size: clamp(22px, 3vw, 34px);
+      color: var(--amarelo);
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      line-height: 1.6;
+      max-width: 650px;
+      color: #f2f2f2;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .btn-whatsapp,
+    .btn-phone {
+      display: inline-block;
+      padding: 18px 24px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .btn-whatsapp {
+      background: var(--verde);
+      color: white;
+      box-shadow: 0 12px 30px rgba(37,211,102,0.35);
+    }
+
+    .btn-phone {
+      background: white;
+      color: var(--azul);
+    }
+
+    .hero-checks {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .hero-checks span {
+      background: rgba(255,255,255,0.12);
+      padding: 12px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+      font-weight: 700;
+    }
+
+    .lead-card {
+      background: white;
+      color: #111;
+      padding: 30px;
+      border-radius: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.28);
+    }
+
+    .lead-card h3 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: var(--azul);
+    }
+
+    .lead-card p {
+      color: var(--cinza);
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .lead-card input,
+    .lead-card select {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      font-size: 15px;
+    }
+
+    .lead-card button {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      background: var(--vermelho);
+      color: white;
+      font-weight: 900;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 75px 20px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title span {
+      color: var(--vermelho);
+      font-weight: 900;
+    }
+
+    .section-title h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      color: var(--azul-escuro);
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: var(--cinza);
+      font-size: 18px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .trust-card,
+    .service-card,
+    .city-card {
+      background: white;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.08);
+    }
+
+    .trust-card h3,
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: var(--azul);
+    }
+
+    .trust-card .icon,
+    .service-card .icon {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .services {
+      background: #ffffff;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      border-top: 5px solid var(--azul);
+    }
+
+    .pain {
+      background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+      color: white;
+    }
+
+    .pain-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .pain h2 {
+      font-size: clamp(32px, 4vw, 52px);
+      margin-bottom: 18px;
+    }
+
+    .pain p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #f1f1f1;
+      margin-bottom: 20px;
+    }
+
+    .pain-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .pain-list div {
+      background: rgba(255,255,255,0.12);
+      padding: 15px;
+      border-radius: 12px;
+      font-weight: 800;
+    }
+
+    .image-placeholder {
+      min-height: 360px;
+      border-radius: 24px;
+      background:
+        linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+        url("servico-desentupidora.jpg");
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      text-align: center;
+    }
+
+    .city-card {
+      font-weight: 900;
+      color: var(--azul);
+    }
+
+    .seo-text {
+      background: white;
+      border-radius: 22px;
+      padding: 34px;
+      line-height: 1.8;
+      color: #333;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.08);
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, var(--vermelho), var(--azul));
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .cta-final h2 {
+      font-size: clamp(32px, 5vw, 56px);
+      margin-bottom: 15px;
+    }
+
+    .cta-final p {
+      font-size: 20px;
+      margin-bottom: 28px;
+    }
+
+    footer {
+      background: #03142b;
+      color: white;
+      text-align: center;
+      padding: 28px 20px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 9999;
+      background: var(--verde);
+      color: white;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 31px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.28);
+      animation: pulse 1.6s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        flex-direction: column;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero-container,
+      .pain-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        text-align: center;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .hero-checks,
+      .trust-grid,
+      .services-grid,
+      .areas-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-content">
-
-      <a href="#" class="logo-area">
-        <div class="logo-icon">P</div>
-        <div>
-          <h1>Desentupidora Continental</h1>
-          <span>Atendimento 24h</span>
-        </div>
-      </a>
-
-      <nav class="nav">
-        <a href="#servicos">Serviços</a>
-        <a href="#para-quem-serve">Para quem serve</a>
-        <a href="#quem-somos">Quem somos</a>
-        <a href="#areas">Áreas atendidas</a>
-        <a href="#faq">Dúvidas</a>
-      </nav>
-
-      <div class="header-actions">
-        <a class="call-link" href="tel:+5553984670652">Ligar agora</a>
-        <a 
-          class="header-whats" 
-          href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20atendimento%20com%20desentupidora" 
-          target="_blank"
-        >
-          WhatsApp
-        </a>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo-icon">1</div>
+        Desentupidora Continental
       </div>
 
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <nav id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#areas">Área Atendida</a>
+        <a href="#contato">Contato</a>
+        <a class="btn-top" href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20atendimento%20da%20Desentupidora%20Continental.">WhatsApp</a>
+      </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <main class="hero">
-    <div class="container hero-grid">
+  <section class="hero" id="inicio">
+    <div class="hero-container">
 
-      <section class="hero-text">
-        <div class="badge">
-          Desentupidora 24h em Pelotas e Região
-        </div>
+      <div>
+        <span class="badge">🚨 Atendimento rápido em Pelotas e região</span>
 
-        <h1>
-          Entupiu? Chame uma desentupidora rápida, segura e profissional.
-        </h1>
+        <h1>Esgoto, pia ou vaso entupido?</h1>
 
-        <p class="hero-subtitle">
-          Atendimento emergencial para pia, vaso, ralo, esgoto, caixa de gordura e tubulações. 
-          Fale agora pelo WhatsApp e receba orientação imediata.
+        <h2>A Continental resolve com rapidez e segurança.</h2>
+
+        <p>
+          Mais de 25 anos de experiência em desentupimento, caça vazamentos,
+          limpeza de caixa de gordura e dedetização para residências, comércios e empresas.
         </p>
 
         <div class="hero-actions">
-          <a 
-            class="btn-primary" 
-            href="https://wa.me/5553984670652?text=Olá,%20quero%20solicitar%20um%20atendimento%20agora%20com%20a%20desentupidora" 
-            target="_blank"
-          >
-            Chamar no WhatsApp
+          <a class="btn-whatsapp" href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20atendimento%20da%20Desentupidora%20Continental.">
+            📲 Chamar no WhatsApp
           </a>
 
-          <a class="btn-secondary" href="tel:+5553984670652">
-            Ligar agora
+          <a class="btn-phone" href="tel:+5553984670652">
+            📞 Ligar agora
           </a>
         </div>
 
-        <div class="trust-row">
-          <div>
-            <strong>24h</strong>
-            <span>Atendimento emergencial</span>
-          </div>
-
-          <div>
-            <strong>Rápido</strong>
-            <span>Contato direto</span>
-          </div>
-
-          <div>
-            <strong>Local</strong>
-            <span>Pelotas e região</span>
-          </div>
+        <div class="hero-checks">
+          <span>✅ Orçamento sem compromisso</span>
+          <span>✅ Residencial e comercial</span>
+          <span>✅ Equipamentos profissionais</span>
+          <span>✅ Equipe especializada</span>
         </div>
-      </section>
+      </div>
 
-      <section class="hero-card">
-        <div class="image-box">
-          <img src="assets/img/paulo2.jpg" alt="Paulo Desentupidora atendimento profissional" />
-        </div>
+      <div class="lead-card">
+        <h3>Solicite atendimento</h3>
+        <p>Preencha os dados e fale direto pelo WhatsApp.</p>
 
-      </section>
+        <form onsubmit="sendLead(event)">
+          <input type="text" id="nome" placeholder="Seu nome" required>
+          <input type="tel" id="telefone" placeholder="Seu WhatsApp" required>
+
+          <select id="problema" required>
+            <option value="">Qual problema você precisa resolver?</option>
+            <option>Pia entupida</option>
+            <option>Vaso sanitário entupido</option>
+            <option>Ralo entupido</option>
+            <option>Esgoto entupido</option>
+            <option>Caixa de gordura</option>
+            <option>Caça vazamentos</option>
+            <option>Dedetização</option>
+          </select>
+
+          <button type="submit">Quero atendimento agora ➜</button>
+        </form>
+      </div>
 
     </div>
-  </main>
+  </section>
 
-  <!-- FAIXA DE CONFIANÇA -->
-  <section class="proof-strip">
-    <div class="container proof-grid">
-      <div>
-        <strong>Atendimento 24h</strong>
-        <span>Dia, noite, finais de semana e feriados</span>
-      </div>
+  <section class="section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="icon">🏆</div>
+          <h3>25 anos</h3>
+          <p>Experiência em desentupimento e serviços técnicos.</p>
+        </div>
 
-      <div>
-        <strong>Residencial e comercial</strong>
-        <span>Casas, apartamentos, lojas e empresas</span>
-      </div>
+        <div class="trust-card">
+          <div class="icon">🚐</div>
+          <h3>Equipe própria</h3>
+          <p>Atendimento profissional em Pelotas e região.</p>
+        </div>
 
-      <div>
-        <strong>Orçamento rápido</strong>
-        <span>Envie foto ou vídeo pelo WhatsApp</span>
-      </div>
+        <div class="trust-card">
+          <div class="icon">💧</div>
+          <h3>Caça vazamentos</h3>
+          <p>Localização de vazamentos com técnica adequada.</p>
+        </div>
 
-      <div>
-        <strong>Serviço cuidadoso</strong>
-        <span>Agilidade com responsabilidade</span>
+        <div class="trust-card">
+          <div class="icon">💲</div>
+          <h3>Orçamento</h3>
+          <p>Atendimento com orçamento sem compromisso.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
-  <section class="section" id="servicos">
+  <section class="section services" id="servicos">
     <div class="container">
       <div class="section-title">
-        <span>Serviços especializados</span>
-        <h2>Soluções completas para qualquer tipo de entupimento</h2>
-        <p>
-          Atendemos desde entupimentos simples até situações urgentes que exigem solução rápida e profissional.
-        </p>
+        <span>Serviços</span>
+        <h2>O que a Continental resolve</h2>
+        <p>Serviços rápidos para problemas urgentes no seu imóvel.</p>
       </div>
 
-      <div class="cards-grid">
-        <article class="service-card">
-          <div class="card-icon">🚽</div>
-          <h3>Desentupimento de vaso</h3>
-          <p>
-            Atendimento para vasos sanitários entupidos, com cuidado para evitar danos ao banheiro.
-          </p>
-        </article>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon">🔧</div>
+          <h3>Desentupimento de pia</h3>
+          <p>Atendimento para pias de cozinha, banheiro e áreas de serviço.</p>
+        </div>
 
-        <article class="service-card">
-          <div class="card-icon">🚿</div>
-          <h3>Ralos e banheiros</h3>
-          <p>
-            Remoção de obstruções em ralos, box, banheiros, tanques e áreas de serviço.
-          </p>
-        </article>
+        <div class="service-card">
+          <div class="icon">🚽</div>
+          <h3>Vaso sanitário entupido</h3>
+          <p>Solução para entupimentos, retorno de água e mau cheiro.</p>
+        </div>
 
-        <article class="service-card">
-          <div class="card-icon">🍽️</div>
-          <h3>Pias e cozinhas</h3>
-          <p>
-            Desentupimento de pias, sifões e tubulações com acúmulo de gordura ou resíduos.
-          </p>
-        </article>
+        <div class="service-card">
+          <div class="icon">🕳️</div>
+          <h3>Ralos e esgoto</h3>
+          <p>Desentupimento de ralos, tubulações e redes de esgoto.</p>
+        </div>
 
-        <article class="service-card">
-          <div class="card-icon">🛢️</div>
+        <div class="service-card">
+          <div class="icon">🛢️</div>
           <h3>Caixa de gordura</h3>
-          <p>
-            Limpeza e desobstrução de caixas de gordura para casas, restaurantes e comércios.
-          </p>
-        </article>
-
-        <article class="service-card">
-          <div class="card-icon">🏢</div>
-          <h3>Condomínios e empresas</h3>
-          <p>
-            Atendimento profissional para prédios, lojas, mercados, restaurantes, clínicas e empresas.
-          </p>
-        </article>
-
-        <article class="service-card">
-          <div class="card-icon">🧰</div>
-          <h3>Rede de esgoto</h3>
-          <p>
-            Serviço para tubulações, redes de esgoto, caixas de inspeção e encanamentos externos.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARA QUEM SERVE -->
-  <section class="section target-section" id="para-quem-serve">
-    <div class="container">
-      <div class="section-title">
-        <span>Para quem serve</span>
-        <h2>Atendimento para quem precisa resolver o problema sem enrolação</h2>
-        <p>
-          Nossa desentupidora atende emergências e manutenções em diferentes tipos de imóveis.
-        </p>
-      </div>
-
-      <div class="target-grid">
-        <article class="target-card">
-          <div class="target-icon">🏠</div>
-          <h3>Residências</h3>
-          <p>
-            Para casas e apartamentos com pia, vaso, ralo, tanque, banheiro ou esgoto entupido.
-          </p>
-        </article>
-
-        <article class="target-card">
-          <div class="target-icon">🏢</div>
-          <h3>Condomínios</h3>
-          <p>
-            Para síndicos e administradoras que precisam resolver entupimentos com rapidez.
-          </p>
-        </article>
-
-        <article class="target-card">
-          <div class="target-icon">🍔</div>
-          <h3>Restaurantes e lancherias</h3>
-          <p>
-            Ideal para cozinhas comerciais, caixas de gordura e tubulações com acúmulo de gordura.
-          </p>
-        </article>
-
-        <article class="target-card">
-          <div class="target-icon">🏪</div>
-          <h3>Comércios e empresas</h3>
-          <p>
-            Para lojas, mercados, escritórios, clínicas, oficinas e estabelecimentos em geral.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUEM SOMOS -->
-  <section class="section about-section" id="quem-somos">
-    <div class="container about-grid">
-
-      <div class="about-image">
-        <img src="assets/img/paulo2.jpg" alt="Equipe Paulo Desentupidora" />
-      </div>
-
-      <div class="about-content">
-        <span>Quem somos</span>
-
-        <h2>
-          Uma equipe preparada para atender com rapidez, respeito e profissionalismo.
-        </h2>
-
-        <p>
-          A Paulo Desentupidora atua com foco em atendimento rápido, serviço bem feito e comunicação clara com o cliente.
-          Nosso compromisso é entender o problema, orientar com transparência e executar o serviço com cuidado.
-        </p>
-
-        <p>
-          Atendemos residências, condomínios, comércios e empresas, sempre buscando resolver o entupimento com segurança,
-          organização e o menor transtorno possível.
-        </p>
-
-        <div class="about-list">
-          <div>
-            <strong>Atendimento humanizado</strong>
-            <span>Você fala direto com a equipe e recebe orientação clara.</span>
-          </div>
-
-          <div>
-            <strong>Serviço limpo e cuidadoso</strong>
-            <span>Trabalho feito com organização para reduzir sujeira e retrabalho.</span>
-          </div>
-
-          <div>
-            <strong>Pronto atendimento</strong>
-            <span>Disponível para chamados urgentes, inclusive à noite e finais de semana.</span>
-          </div>
+          <p>Limpeza e desobstrução de caixa de gordura residencial e comercial.</p>
         </div>
 
-        <a 
-          class="about-button" 
-          href="https://wa.me/5553984670652?text=Olá,%20gostaria%20de%20falar%20com%20a%20Paulo%20Desentupidora" 
-          target="_blank"
-        >
-          Falar com a equipe
+        <div class="service-card">
+          <div class="icon">💧</div>
+          <h3>Caça vazamentos</h3>
+          <p>Identificação de vazamentos com serviço técnico profissional.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">🪳</div>
+          <h3>Dedetização</h3>
+          <p>Controle de pragas para casas, empresas e comércios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pain">
+    <div class="container pain-box">
+      <div>
+        <h2>Não espere o problema piorar.</h2>
+        <p>
+          Um entupimento simples pode virar mau cheiro, retorno de esgoto,
+          infiltração e prejuízo maior. Quanto antes resolver, menor o transtorno.
+        </p>
+
+        <a class="btn-whatsapp" href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20atendimento%20urgente%20da%20Desentupidora%20Continental.">
+          🚨 Resolver agora pelo WhatsApp
         </a>
       </div>
 
-    </div>
-  </section>
-
-  <!-- CTA URGÊNCIA -->
-  <section class="cta-strip">
-    <div class="container cta-strip-content">
-      <div>
-        <span>Problema urgente?</span>
-        <h2>Não espere o entupimento virar prejuízo.</h2>
+      <div class="pain-list">
+        <div>❌ Mau cheiro dentro do imóvel</div>
+        <div>❌ Retorno de esgoto</div>
+        <div>❌ Vazamentos e infiltrações</div>
+        <div>❌ Danos ao piso e paredes</div>
+        <div>❌ Prejuízo maior se demorar</div>
       </div>
-
-      <a 
-        href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20uma%20desentupidora%20com%20urgência" 
-        target="_blank"
-      >
-        Chamar agora
-      </a>
     </div>
   </section>
 
-  <!-- ÁREAS ATENDIDAS -->
-  <section class="section areas-section" id="areas">
-    <div class="container areas-grid">
-
-      <div class="areas-content">
-        <span>Áreas atendidas</span>
+  <section class="section" id="areas">
+    <div class="container">
+      <div class="section-title">
+        <span>Área atendida</span>
         <h2>Atendimento em Pelotas e região</h2>
+        <p>Fale com a equipe e consulte disponibilidade para sua cidade.</p>
+      </div>
+
+      <div class="areas-grid">
+        <div class="city-card">📍 Pelotas</div>
+        <div class="city-card">📍 Rio Grande</div>
+        <div class="city-card">📍 Capão do Leão</div>
+        <div class="city-card">📍 Canguçu</div>
+        <div class="city-card">📍 São Lourenço do Sul</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="seo-text">
+        <h2>Desentupidora em Pelotas</h2>
         <p>
-          Atendemos bairros e regiões próximas com foco em agilidade, principalmente em situações de emergência.
-          Caso esteja em dúvida se sua localidade é atendida, chame no WhatsApp e confirme rapidamente.
+          A Desentupidora Continental atende Pelotas e região com serviços de
+          desentupimento de pia, desentupimento de vaso sanitário, ralos,
+          redes de esgoto, limpeza de caixa de gordura, caça vazamentos e dedetização.
         </p>
-
-        <a 
-          href="https://wa.me/5553984670652?text=Olá,%20gostaria%20de%20saber%20se%20vocês%20atendem%20minha%20região" 
-          target="_blank"
-        >
-          Consultar atendimento
-        </a>
-      </div>
-
-      <div class="areas-list">
-        <div>Pelotas</div>
-        <div>Cassino</div>
-        <div>Rio Grande</div>
-        <div>Canguçu</div>
-        <div>Sao Lorenço</div>
-        <div>Jaguarao</div>
-        <div>Turuçu</div>
-        <div>Capão do Leão</div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- VANTAGENS -->
-  <section class="section light" id="vantagens">
-    <div class="container">
-      <div class="section-title">
-        <span>Por que escolher nossa equipe?</span>
-        <h2>Atendimento com postura profissional do primeiro contato ao serviço final</h2>
-      </div>
-
-      <div class="benefits-grid">
-        <div class="benefit">
-          <strong>01</strong>
-          <h3>Resposta rápida</h3>
-          <p>
-            Contato direto pelo WhatsApp para agilizar o atendimento e entender o problema.
-          </p>
-        </div>
-
-        <div class="benefit">
-          <strong>02</strong>
-          <h3>Serviço cuidadoso</h3>
-          <p>
-            Execução com organização para reduzir sujeira, transtorno e retrabalho.
-          </p>
-        </div>
-
-        <div class="benefit">
-          <strong>03</strong>
-          <h3>Atendimento 24h</h3>
-          <p>
-            Pronto atendimento para emergências durante o dia, noite, finais de semana e feriados.
-          </p>
-        </div>
-
-        <div class="benefit">
-          <strong>04</strong>
-          <h3>Equipe preparada</h3>
-          <p>
-            Profissionais preparados para avaliar e resolver o entupimento com segurança.
-          </p>
-        </div>
+        <p>
+          Se você procura uma desentupidora em Pelotas com atendimento rápido,
+          orçamento sem compromisso e experiência no mercado, fale agora com a
+          Continental pelo WhatsApp.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- COMO FUNCIONA -->
-  <section class="section dark-section">
-    <div class="container">
-      <div class="section-title white">
-        <span>Como funciona</span>
-        <h2>Você chama, nossa equipe avalia e resolve</h2>
-      </div>
+  <section class="cta-final" id="contato">
+    <h2>Precisa de atendimento agora?</h2>
+    <p>Chame a Desentupidora Continental no WhatsApp.</p>
 
-      <div class="steps">
-        <div class="step">
-          <span>1</span>
-          <h3>Chame no WhatsApp</h3>
-          <p>
-            Explique o problema e envie fotos ou vídeos, se tiver.
-          </p>
-        </div>
+    <a class="btn-whatsapp" href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20atendimento%20da%20Desentupidora%20Continental.">
+      📲 Solicitar atendimento
+    </a>
 
-        <div class="step">
-          <span>2</span>
-          <h3>Receba orientação</h3>
-          <p>
-            Nossa equipe avalia a situação e informa o melhor atendimento.
-          </p>
-        </div>
-
-        <div class="step">
-          <span>3</span>
-          <h3>Serviço executado</h3>
-          <p>
-            O entupimento é resolvido com agilidade, segurança e profissionalismo.
-          </p>
-        </div>
-      </div>
-    </div>
+    <p style="margin-top:20px;">📞 (53) 98467-0652</p>
   </section>
 
-  <!-- FAQ -->
-  <section class="section faq-section" id="faq">
-    <div class="container">
-      <div class="section-title">
-        <span>Dúvidas frequentes</span>
-        <h2>Perguntas comuns antes de chamar a desentupidora</h2>
-      </div>
-
-      <div class="faq-grid">
-        <details>
-          <summary>Vocês atendem 24 horas?</summary>
-          <p>
-            Sim. O atendimento é voltado para chamados urgentes durante o dia, noite, finais de semana e feriados.
-          </p>
-        </details>
-
-        <details>
-          <summary>Atendem residência e comércio?</summary>
-          <p>
-            Sim. Atendemos casas, apartamentos, condomínios, restaurantes, lojas, escritórios e empresas.
-          </p>
-        </details>
-
-        <details>
-          <summary>Preciso enviar foto pelo WhatsApp?</summary>
-          <p>
-            Não é obrigatório, mas ajuda bastante. Uma foto ou vídeo permite entender melhor o problema antes do atendimento.
-          </p>
-        </details>
-
-        <details>
-          <summary>Fazem desentupimento de caixa de gordura?</summary>
-          <p>
-            Sim. Fazemos desobstrução e limpeza de caixas de gordura para residências e comércios.
-          </p>
-        </details>
-
-        <details>
-          <summary>Atendem casos de esgoto entupido?</summary>
-          <p>
-            Sim. Atendemos redes de esgoto, tubulações, caixas de inspeção e encanamentos externos.
-          </p>
-        </details>
-
-        <details>
-          <summary>Como peço atendimento?</summary>
-          <p>
-            Clique em qualquer botão de WhatsApp da página, informe sua localização e explique o problema.
-          </p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO FINAL -->
-  <section class="final-cta" id="contato">
-    <div class="container final-box">
-      <span>Atendimento imediato</span>
-      <h2>Precisa de uma desentupidora agora?</h2>
-      <p>
-        Clique no botão abaixo e fale diretamente com a equipe pelo WhatsApp.
-      </p>
-
-      <div class="final-actions">
-        <a 
-          class="final-whats" 
-          href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20atendimento%20agora%20com%20desentupidora" 
-          target="_blank"
-        >
-          Falar no WhatsApp
-        </a>
-
-        <a class="final-call" href="tel:+5553984670652">
-          Ligar agora
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div>
-        <strong>Paulo Desentupidora 24h</strong>
-        <p>Atendimento rápido para Pelotas e região.</p>
-      </div>
-
-      <div>
-        <p>WhatsApp: (53) 98467-0652</p>
-        <p>Atendimento 24 horas</p>
-      </div>
-    </div>
+  <footer>
+    <p>© Desentupidora Continental - Desentupimento, Caça Vazamentos e Dedetização em Pelotas.</p>
   </footer>
 
-  <!-- BOTÃO FLUTUANTE WHATSAPP -->
-  <a 
-    class="whatsapp-float" 
-    href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20atendimento%20com%20desentupidora" 
-    target="_blank" 
-    aria-label="Chamar no WhatsApp"
-  >
-    <span>💬</span>
+  <a class="floating-whatsapp" href="https://wa.me/5553984670652?text=Olá,%20preciso%20de%20atendimento%20da%20Desentupidora%20Continental.">
+    ☎
   </a>
 
-  <!-- POPUP WHATSAPP -->
-  <div class="whatsapp-popup" id="whatsappPopup">
-    <button class="popup-close" id="popupClose" aria-label="Fechar popup">×</button>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
 
-    <div class="popup-header">
-      <div class="popup-avatar">P</div>
-      <div>
-        <strong>Paulo Desentupidora</strong>
-        <span>Atendimento 24h pelo WhatsApp</span>
-      </div>
-    </div>
+    function sendLead(event) {
+      event.preventDefault();
 
-    <p>
-      Está com pia, vaso, ralo, caixa de gordura ou esgoto entupido?
-      Fale conosco agora.
-    </p>
+      const nome = document.getElementById("nome").value;
+      const telefone = document.getElementById("telefone").value;
+      const problema = document.getElementById("problema").value;
 
-    <a 
-      href="https://wa.me/5553984670652?text=Olá,%20vi%20o%20site%20e%20preciso%20de%20atendimento%20com%20desentupidora" 
-      target="_blank"
-    >
-      Abrir WhatsApp
-    </a>
-  </div>
+      const mensagem = `Olá, preciso de atendimento da Desentupidora Continental.%0A%0A` +
+        `Nome: ${nome}%0A` +
+        `WhatsApp: ${telefone}%0A` +
+        `Problema: ${problema}`;
 
-  <script src="assets/js/app.js"></script>
+      window.location.href = `https://wa.me/5553984670652?text=${mensagem}`;
+    }
+  </script>
+
 </body>
 </html>
